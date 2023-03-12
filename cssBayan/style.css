@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background: rgb(242,232,201)
+}
+
+/*весь блок*/
+.accordion {
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*настройка цвета h3*/
+.accordion:hover h3 {
+margin: 0;
+color: rgb(0,0,0);
+}
+
+/*настройка цвета h3 для открытого блока*/
+.accordion-block-open:hover h3 {
+margin: 0;
+color: rgb(0,0,0);
+}
+/*изменяем курсор при наведении в область*/
+.accordion:hover
+{
+cursor: pointer;
+}
+
+/*раскрытие секций*/
+.accordion:hover
+.accordion-block:hover
+.accordion-picture, .accordion .accordion-block-open .accordion-picture {
+height: 100%;
+}
+
+/*иконка открытой картинки*/
+.accordion-block-open .svg1 {
+transform: rotate(45deg);
+visibility: hidden;
+}
+
+/*скрытые по умолчанию иконки*/
+.accordion-block .svg1 {
+visibility: hidden;
+}
+
+/*показываем иконки*/
+.accordion:hover .svg1 {
+visibility: visible;
+transition-delay: 0.25s  
+}
+
+/*поворот иконки при наведении на секцию*/
+.accordion-block:hover .svg1 {
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+/*поворот иконки при наведении на открытую секцию*/
+.accordion-block-open:hover .svg1 {
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+/*настройка секции*/
+.accordion .accordion-block {
+color: rgb(0,124,173)
+}
+/*настройка отступов h3*/
+.accordion h3 {
+margin: 0;
+}
+
+/*сокрытие картинок по-умолчанию*/
+.accordion-picture {
+  height: 0;
+	overflow: hidden;
+	transition: max-height 2.0s
+} 
