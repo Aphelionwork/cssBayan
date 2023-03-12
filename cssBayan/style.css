@@ -78,3 +78,15 @@ margin: 0;
 	overflow: hidden;
 	transition: max-height 2.0s
 } 
+
+/*описываем метки*/
+.label {
+    flex-direction: column;
+    display: flex;
+    cursor: pointer;
+}
+
+/*скрываем радиобаттоны*/
+input {
+    visibility: hidden;
+}
