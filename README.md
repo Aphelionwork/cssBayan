@@ -1,1 +1,1 @@
-https://github.com/Aphelionwork/cssBayan/cssBayan/index.html
+https://Aphelionwork.github.io/cssBayan/cssBayan/index.html
