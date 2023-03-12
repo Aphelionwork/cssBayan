@@ -48,19 +48,19 @@ visibility: hidden;
 /*показываем иконки*/
 .accordion:hover .svg1 {
 visibility: visible;
-transition-delay: 0.25s  
+transition-delay: 0.5s  
 }
 
 /*поворот иконки при наведении на секцию*/
 .accordion-block:hover .svg1 {
     transform: rotate(45deg);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /*поворот иконки при наведении на открытую секцию*/
 .accordion-block-open:hover .svg1 {
     transform: rotate(45deg);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /*настройка секции*/
